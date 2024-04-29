@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAPP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="forweathercard">
+
+        </div>
+        <form id="weatherForm" class="weatherForm" action="#" method="post">
+            <div class="lablebox">
+                <label for="locationlable" class="locationlable">Location:</label>
+                <input class="location" id="location" name="location" type="text" placeholder="location">
+            </div>
+            <div class="hoverpurpose">
+                <button type="submit" class="getWeather" id="getWeather">submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="handleData.js"></script>
+</body>
+</html>
