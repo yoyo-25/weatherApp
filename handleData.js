@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         const locationInput = document.getElementById("location")
         const location = locationInput.value
 
-        try{
+        try{ 
             const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=c8efde8f669517786f2a00fd008f6f7e`)
             displayWeatherData(location,response.data);
 
