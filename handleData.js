@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         const location = locationInput.value
 
         try{ 
-            const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid="YOUR_API_KEY"`)
+            const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid= YOUR_API_KEY`)
             displayWeatherData(location,response.data);
 
         } catch(error){
